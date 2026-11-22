@@ -1,0 +1,30 @@
+[
+  {
+    "__template_key": "prize",
+    "level": "特等奖",
+    "name": "键盘",
+    "weight": 5,
+    "count": 1
+  },
+  {
+    "__template_key": "prize",
+    "level": "一等奖",
+    "name": "U盘",
+    "weight": 15,
+    "count": 3
+  },
+  {
+    "__template_key": "prize",
+    "level": "二等奖",
+    "name": "小风扇",
+    "weight": 40,
+    "count": 5
+  },
+  {
+    "__template_key": "prize",
+    "level": "三等奖",
+    "name": "钥匙扣",
+    "weight": 100,
+    "count": 10
+  }
+]

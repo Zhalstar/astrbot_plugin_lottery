@@ -1,0 +1,59 @@
+{
+  "no_prize_weight": {
+    "description": "未中奖权重",
+    "hint": "未中奖概率 = 本权重 / 所有仍有库存的奖项权重与本权重之和。设为 0 表示每次都中奖。",
+    "type": "int",
+    "slider": {
+      "min": 0,
+      "max": 10000,
+      "step": 1
+    },
+    "default": 840
+  },
+  "prize_entries": {
+    "description": "默认奖项",
+    "hint": "开启抽奖时复制这些奖项。实际概率 = 奖项权重 / 当前候选项权重之和。",
+    "type": "template_list",
+    "default": [],
+    "templates": {
+      "prize": {
+        "name": "奖项",
+        "display_item": "level",
+        "items": {
+          "level": {
+            "description": "奖项档位",
+            "hint": "注意档位名称不能重复",
+            "type": "string",
+            "default": "新奖项"
+          },
+          "name": {
+            "description": "奖品名称",
+            "type": "string",
+            "default": "奖品"
+          },
+          "weight": {
+            "description": "中奖权重",
+            "hint": "实际概率 = 本权重 / 当前候选项权重之和。设为 0 表示不抽取该奖项。",
+            "type": "int",
+            "slider": {
+              "min": 0,
+              "max": 10000,
+              "step": 1
+            },
+            "default": 10
+          },
+          "count": {
+            "description": "奖品数量",
+            "type": "int",
+            "slider": {
+              "min": 1,
+              "max": 1000,
+              "step": 1
+            },
+            "default": 1
+          }
+        }
+      }
+    }
+  }
+}
